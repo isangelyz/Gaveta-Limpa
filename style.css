@@ -3,6 +3,9 @@
     --rosa-claro: #e3c2b3;
     --cinza-claro: #dad5d0;
     --cinza:  rgb(29, 29, 29);
+    --laranja-apagado: #c7a599;
+    --laranja-acizentado-pastel: #ddcbba;
+    --laranja-acizentado: #d1baab;
     --fonte-titulo: 'Gentium Plus', serif;
     --fonte-body: 'Montserrat', sans-serif;
 }
@@ -11,7 +14,15 @@ body {
     margin: 0;
     background: #d9d9d9;
     padding-top: 120px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: sans-serif;
+    background: linear-gradient(
+        90deg,
+        var(--laranja-apagado) 5%,
+        var(--laranja-acizentado-pastel) 55%,
+        var(--laranja-acizentado) 90%
+    );
 }
 
 .cabeçalho {
@@ -28,7 +39,7 @@ body {
     box-shadow: 0 8px 20px rgba(80, 66, 66, 0.25);
     background: linear-gradient(
         145deg,
-        #be8c85 5%,
+        var(--laranja-acizentado-pastel) 5%,
         var(--rosa-claro) 55%,
         var(--cinza-claro) 90%
     );
@@ -41,10 +52,11 @@ body {
 
 .cabeçalho_titulo {
     font-size: 38px;
-    color: #dad5d0;
+    color: var(--vinho);
     font-family: var(--fonte-titulo);
     text-transform: uppercase;
     margin: 10px;
+    font-weight: 300;
 }
 
 .cabeçalho_logo {
@@ -60,6 +72,95 @@ body {
     display: inline-block;
     padding: 0 20px;
     font-size: 18px;
-    color: var(--cinza);
+    color: var(--vinho);
     font-family: var(--fonte-body);
+}
+
+.cabeçalho_seções_carrinho {
+    height: 30px;
+    margin-top: 3%;
+    margin-left: 20px;
+}
+
+.meio{
+    margin: 50px;
+}
+
+.meio_introdução{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    justify-content: space-between;
+    margin: 60px 15%;
+}
+
+.meio_introdução_imagem {
+    width: 40%;
+    object-fit: cover;
+    box-shadow: #a57582 0px 4px 15px;
+}
+
+.meio_introdução_titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 75px;
+    color: var(--vinho);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.estrela {
+    position: relative;
+    color: #6B3E3E;
+    font-size: 1.2em;
+}
+
+.esquerda-1 { top: 20px; left: 70%; }
+.esquerda-2 { top: 30px; left: -20%; }
+.direita-1 { top: -20px; right: -70%; }
+.direita-2 { top: 0; right: 10%; }
+
+
+.rodapé {
+    display: flex;
+    background-color: var(--cinza-claro);
+    margin-top: 100px;
+    padding: 25px 15%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.rodapé_logo {
+    height: 120px;
+}
+
+
+.rodapé_termos {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    line-height: 1.1;
+}
+
+.rodapé_termos_item {
+    color: var(--vinho);
+    font-family: var(--fonte-body);
+    text-decoration: none;
+}
+
+.rodapé_redes_sociais {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    line-height: 1.1;
+}
+
+.rodapé_redes_sociais_item {
+    color: var(--vinho);
+    font-family: var(--fonte-body);
+    text-decoration: none;
 }
