@@ -1,0 +1,65 @@
+:root {
+    --vinho: #7e4453;
+    --rosa-claro: #e3c2b3;
+    --cinza-claro: #dad5d0;
+    --cinza:  rgb(29, 29, 29);
+    --fonte-titulo: 'Gentium Plus', serif;
+    --fonte-body: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #d9d9d9;
+    padding-top: 120px;
+    font-family: sans-serif;
+}
+
+.cabeçalho {
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    width: 80%;
+    top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 60px;
+    border-radius: 80px;
+    box-shadow: 0 8px 20px rgba(80, 66, 66, 0.25);
+    background: linear-gradient(
+        145deg,
+        #be8c85 5%,
+        var(--rosa-claro) 55%,
+        var(--cinza-claro) 90%
+    );
+
+}
+.cabeçalho_marca {
+    display: flex;
+    align-items: center;
+}
+
+.cabeçalho_titulo {
+    font-size: 38px;
+    color: #dad5d0;
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.cabeçalho_logo {
+    height: 70px;
+}
+
+.cabeçalho_seções {
+    display: flex;
+    padding-right: 16px;
+}
+
+.cabeçalho_seções_item {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 18px;
+    color: var(--cinza);
+    font-family: var(--fonte-body);
+}
