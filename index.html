@@ -1,3 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gaveta Limpa</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet (mapa) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<header>
+  <h1>🌱 Gaveta Limpa</h1>
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#mapa">Ecopontos</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Descarte consciente começa na sua gaveta</h2>
+  <p>Encontre pontos de descarte de eletrônicos em Maringá</p>
+  <a href="#mapa" class="btn">Encontrar Ecopontos</a>
+</section>
+
+<section id="mapa">
+  <h2>📍 Ecopontos em Maringá</h2>
+
+  <div class="container">
+    <div id="map"></div>
+
+    <div class="lista">
+      <h3>Locais disponíveis</h3>
+      <ul id="lista-ecopontos"></ul>
+    </div>
+  </div>
+</section>
+
 <section id="sobre">
   <h2>Sobre o projeto</h2>
 
@@ -33,8 +73,13 @@
   <div class="contato-box">
     <p>Tem dúvidas ou quer contribuir com o projeto?</p>
 
-    <a href="https://wa.me/5544999999999" target="_blank" class="whatsapp-btn">
+    <a href="https://wa.me/5544988477997" target="_blank" class="whatsapp-btn">
       💬 Falar no WhatsApp
     </a>
   </div>
 </section>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
